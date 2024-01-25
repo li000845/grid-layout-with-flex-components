@@ -4,22 +4,29 @@ body {
 }
 
 .siteheader {
-    text-align: center;
-    margin: 2rem 0;
+    text-align: left;
+    margin: 0.5rem 0;
 }
 
 .siteheader h1 {
     color: #000;
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    gap: 1rem; /* Space between the grid items */
+    max-width: 1200;
+    gap: 2rem; /* Space between the grid items */
     padding: 1rem;
   }
 
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-template-rows: repeat(2, 1fr); /* Creates two rows */
+    gap: 1rem; /* Space between the cards */
+    padding: 1rem; /* Padding around the grid */
+  }
+  
 .emoji {
     display: flex;
     flex-direction: column;
@@ -28,6 +35,11 @@ body {
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+.emoji .icon {
+  font-size: 4rem;
+  margin: 0.5rem 0;
 }
 
 .emoji h2 {
@@ -39,7 +51,7 @@ body {
 }
 
   .emoji p {
-    color: #494b4f; /* Dark gray color */
+    color: #000; 
     line-height: 1.6; /* Line height for paragraph */
     margin-bottom: auto; /* Pushes the link to the bottom */
   }
@@ -55,7 +67,3 @@ body {
   align-self: center;
 }
 
-.icon {
-  font-size: 4rem;
-  margin: 0.5rem 0;
-}
