@@ -3,16 +3,46 @@ body {
   color: #222;
 }
 
+.siteheader {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.siteheader h1 {
+    color: #000;
+    font-size: 2.25rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 1rem; /* Space between the grid items */
+    padding: 1rem;
+  }
+
 .emoji {
-  border: 1px solid #222;
-  border-radius: 8px;
-  padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .emoji h2 {
-  margin: 0;
-  border-bottom: 2px solid #ccc;
+    color: #000;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #ccc;
 }
+
+  .emoji p {
+    color: #494b4f; /* Dark gray color */
+    line-height: 1.6; /* Line height for paragraph */
+    margin-bottom: auto; /* Pushes the link to the bottom */
+  }
 
 .emoji a {
   text-decoration: none;
@@ -20,8 +50,12 @@ body {
   color: white;
   padding: 1rem;
   border-radius: 8px;
+  text-align: center;
+  margin-top: 1rem;
+  align-self: center;
 }
 
 .icon {
   font-size: 4rem;
+  margin: 0.5rem 0;
 }
